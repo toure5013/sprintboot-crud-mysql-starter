@@ -6,19 +6,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller // This means that this class is a Controller
-@RequestMapping(path="") // This means URL's start with /demo (after Application path)
+import java.util.logging.Logger;
+
 @SpringBootApplication
 public class HrapiApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(HrapiApplication.class, args);
-    }
-
-
-    @GetMapping(path  ="/")
-    public String welcome(){
-        return "Welcome to hr api v1 :)";
+        //Logger.getLogger("INFO");
     }
 
 }
