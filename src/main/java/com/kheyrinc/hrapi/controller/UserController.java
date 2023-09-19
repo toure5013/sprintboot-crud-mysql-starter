@@ -41,7 +41,7 @@ public class UserController {
         LOG.log(Level.INFO, "### PARAM FIRSTNAME : `{0}` ###", user.getFirstname().toString());
         LOG.log(Level.INFO, "### PARAM LASTNAME : `{0}` ###", user.getLastname().toString());
         LOG.log(Level.INFO, "### PARAM EMAIL : `{0}` ###", user.getEmail().toString());
-        LOG.log(Level.INFO, "### PARAM PASSWORD : `{0}` ###", user.getEmail().toString());
+        LOG.log(Level.INFO, "### PARAM PASSWORD : `{0}` ###", user.getPassword().toString());
 
         return userService.saveUser(user);
     }
